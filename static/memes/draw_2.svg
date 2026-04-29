@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+  <rect width="720" height="420" fill="#dff7ff"/>
+  <rect x="26" y="26" width="668" height="368" rx="26" fill="#f6fdff" stroke="#2f6d7e" stroke-width="6"/>
+  <text x="360" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="52" font-weight="800" fill="#265f6e">
+    REMIS LEVEL PRO
+  </text>
+  <text x="360" y="192" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#2f6d7e">
+    Wygląda jak remis, brzmi jak remis
+  </text>
+  <text x="360" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="66" font-weight="800" fill="#245362">
+    X = O
+  </text>
+  <text x="360" y="332" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#2f6d7e">
+    Dwie legendy, zero porażki.
+  </text>
+</svg>

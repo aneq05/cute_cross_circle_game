@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+  <rect width="720" height="420" fill="#d8e5ff"/>
+  <circle cx="90" cy="350" r="60" fill="#b0c8ff"/>
+  <circle cx="650" cy="80" r="74" fill="#c9d8ff"/>
+  <text x="360" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="54" font-weight="800" fill="#2a396d">
+    BOT WYGRAŁ
+  </text>
+  <text x="360" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#334c8a">
+    Ty: "to było rozgrzewkowe"
+  </text>
+  <text x="360" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="66" font-weight="800" fill="#243b77">
+    O O O
+  </text>
+  <text x="360" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#334f93">
+    Rewanż za 3...2...1...
+  </text>
+</svg>

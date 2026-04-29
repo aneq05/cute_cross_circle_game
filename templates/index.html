@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kółko i Krzyżyk: rozgrywka o zaliczenie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <h1>Kółko i Krzyżyk: rozgrywka o zaliczenie</h1>
+      <p>Ty grasz jako X.</p>
+    </header>
+
+    <section class="dashboard">
+      <section class="layout">
+        <aside class="panel stats-card">
+          <h2>Statystyki</h2>
+          <div class="stats-grid">
+            <article class="stat-tile">
+              <span class="icon">🎮</span>
+              <span class="label">Rozegrane</span>
+              <strong id="games">{{ stats.games }}</strong>
+            </article>
+            <article class="stat-tile">
+              <span class="icon">🏆</span>
+              <span class="label">Wygrane X</span>
+              <strong id="x-wins">{{ stats.x_wins }}</strong>
+            </article>
+            <article class="stat-tile">
+              <span class="icon">🤖</span>
+              <span class="label">Wygrane O</span>
+              <strong id="o-wins">{{ stats.o_wins }}</strong>
+            </article>
+            <article class="stat-tile">
+              <span class="icon">⚖️</span>
+              <span class="label">Remisy</span>
+              <strong id="draws">{{ stats.draws }}</strong>
+            </article>
+            <article class="stat-tile stat-wide">
+              <span class="icon">🔥</span>
+              <span class="label">Seria gracza</span>
+              <strong id="streak">{{ stats.player_streak }}</strong>
+            </article>
+          </div>
+          <button id="new-game-btn" class="primary">Nowa rozgrywka</button>
+        </aside>
+
+        <section class="panel board-card">
+          <h2>Plansza</h2>
+          <p id="message" class="message">Kliknij pole i zacznij grę.</p>
+
+          <section id="result-banner" class="result-banner" aria-live="polite" hidden>
+            <h3 id="result-title">Koniec gry</h3>
+            <p id="result-subtitle">Podsumowanie rundy.</p>
+            <img id="result-meme" alt="Meme po zakończonej grze">
+          </section>
+
+          <div id="board" class="board">
+            <button class="cell" data-index="0" aria-label="Pole 1"></button>
+            <button class="cell" data-index="1" aria-label="Pole 2"></button>
+            <button class="cell" data-index="2" aria-label="Pole 3"></button>
+            <button class="cell" data-index="3" aria-label="Pole 4"></button>
+            <button class="cell" data-index="4" aria-label="Pole 5"></button>
+            <button class="cell" data-index="5" aria-label="Pole 6"></button>
+            <button class="cell" data-index="6" aria-label="Pole 7"></button>
+            <button class="cell" data-index="7" aria-label="Pole 8"></button>
+            <button class="cell" data-index="8" aria-label="Pole 9"></button>
+          </div>
+
+          <div class="legend">
+            <span><b>X</b> = Ty</span>
+            <span><b>O</b> = Bot</span>
+            <span>Cel: trzy symbole w linii.</span>
+          </div>
+        </section>
+
+        <aside class="panel log-card">
+          <h2>Dziennik ruchów</h2>
+          <ul id="log" class="log">
+            <li>🎬 Start gry. Czekam na pierwszy ruch.</li>
+          </ul>
+        </aside>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; {{ year }} • Kółko i Krzyżyk z humorem</small>
+  </footer>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

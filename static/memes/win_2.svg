@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+  <rect width="720" height="420" fill="#c9f5d8"/>
+  <rect x="18" y="18" width="684" height="384" rx="26" fill="#f4fff8" stroke="#2f6b4b" stroke-width="6"/>
+  <text x="360" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="800" fill="#244b37">
+    WYGRAŁAŚ
+  </text>
+  <text x="360" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#2f6b4b">
+    Bot wpisuje "to był przypadek"
+  </text>
+  <text x="360" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="66" font-weight="800" fill="#193a2b">
+    X X X
+  </text>
+  <text x="360" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#355a49">
+    Ty: "Dziękuję, wiem."
+  </text>
+</svg>

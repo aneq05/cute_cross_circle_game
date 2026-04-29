@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+  <rect width="720" height="420" fill="#f7f1d0"/>
+  <text x="360" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="56" font-weight="800" fill="#6a5a21">
+    REMIS
+  </text>
+  <text x="360" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#8a7730">
+    Nikt nie wygrał, ale każdy coś czuje
+  </text>
+  <text x="360" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="64" font-weight="800" fill="#5f5328">
+    X O X O X O
+  </text>
+  <text x="360" y="336" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#7a6f42">
+    To był mecz psychologiczny.
+  </text>
+</svg>
