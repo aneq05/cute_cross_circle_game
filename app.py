@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from datetime import datetime
+import os
 import random
 
 from flask import Flask, render_template, request
@@ -97,7 +98,7 @@ def result_message(board: list[str], bot_index: int | None, finished: bool) -> s
     if win == "O":
         return "Bot wygrał, ale podejrzewamy czarną magię."
     if finished:
-        return "Remis!"
+        return "Remis."
     if bot_index is None:
         return "Twój ruch."
     return f"Bot postawił O na polu {bot_index + 1}. Twój ruch!"
@@ -193,4 +194,4 @@ def api_record() -> tuple[dict[str, object], int]:
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=os.environ.get("FLASK_DEBUG") == "1")

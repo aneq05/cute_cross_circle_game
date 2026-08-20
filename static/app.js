@@ -17,9 +17,18 @@ const statsNodes = {
 };
 
 const MEMES = {
-  x: ["/static/memes/win_1.svg", "/static/memes/win_2.svg"],
-  o: ["/static/memes/lose_1.svg", "/static/memes/lose_2.svg"],
-  draw: ["/static/memes/draw_1.svg", "/static/memes/draw_2.svg"],
+  x: [
+    "https://i.imgflip.com/30b1gx.jpg",
+    "https://i.imgflip.com/1ihzfe.jpg",
+  ],
+  o: [
+    "https://i.imgflip.com/1c1uej.jpg",
+    "https://i.imgflip.com/2fm6x.jpg",
+  ],
+  draw: [
+    "https://i.imgflip.com/1g8my4.jpg",
+    "https://i.imgflip.com/345v97.jpg",
+  ],
 };
 
 let board = Array(9).fill("");
@@ -52,13 +61,13 @@ function pickMeme(resultCode) {
 
 function showResultBanner(resultCode, message) {
   if (resultCode === "x") {
-    resultTitle.textContent = "Wygrałaś! 🎉";
+    resultTitle.textContent = "WYGRANA 🎉";
     resultSubtitle.textContent = "Piękna robota. Bot prosi o rewanż.";
   } else if (resultCode === "o") {
-    resultTitle.textContent = "Bot wygrał 😅";
+    resultTitle.textContent = "PRZEGRANA 😅";
     resultSubtitle.textContent = "Spokojnie, to była tylko runda testowa.";
   } else {
-    resultTitle.textContent = "Remis 🤝";
+    resultTitle.textContent = "REMIS 🤝";
     resultSubtitle.textContent = "Bardzo wyrównany mecz!";
   }
 

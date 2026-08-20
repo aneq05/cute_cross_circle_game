@@ -1,18 +1,51 @@
-# Generator Wymówek Studenckich 3000
+# Tic-Tac-Toe With a Bot
 
-Prosta i śmieszna stronka w Pythonie (Flask) na zaliczenie z podstaw.
+A small web-based tic-tac-toe game built for fun with Python and Flask.
+The player uses `X`, while a simple bot responds with `O`.
 
-## Co robi
-- losuje zabawną wymówkę studencką,
-- pokazuje jej „moc” i szansę powodzenia,
-- dorzuca plan awaryjny,
-- pozwala kliknąć reakcję prowadzącego i przyznaje punkty stylu.
+## Features
 
-## Jak uruchomić
-1. Wejdź do folderu projektu.
-2. Zainstaluj zależności:
-   `pip install -r requirements.txt`
-3. Odpal aplikację:
-   `python app.py`
-4. Otwórz w przeglądarce:
-   `http://127.0.0.1:5000`
+- play tic-tac-toe directly in the browser,
+- handle player and bot moves through simple API endpoints,
+- show the round result with a random meme image,
+- track basic in-memory stats for the current server session: games played, wins, draws, and player streak.
+
+## Screenshots
+
+![Main game view](docs/screenshots/main-view.png)
+
+| Win result | Loss result |
+| --- | --- |
+| ![Win result screen](docs/screenshots/win-result.png) | ![Loss result screen](docs/screenshots/loss-result.png) |
+
+| Stats panel | Move log |
+| --- | --- |
+| ![Stats panel](docs/screenshots/stats-panel.png) | ![Move log](docs/screenshots/move-log.png) |
+
+## Tech Stack
+
+- Python
+- Flask
+- HTML, CSS, and JavaScript
+
+## How to Run
+
+1. Open the project folder.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Start the app:
+   ```bash
+   python app.py
+   ```
+4. Open it in your browser:
+   ```text
+   http://127.0.0.1:5000
+   ```
+
+You can enable debug mode locally by setting `FLASK_DEBUG=1` before starting the app.
+
+## Notes
+
+Stats are stored in process memory, so they reset when the server restarts.
